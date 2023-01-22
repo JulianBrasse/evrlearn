@@ -1,0 +1,206 @@
+/*Position, Size, Order, Shape, Font, Color*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px; 
+	font-family: "Work Sans", sans-serif;
+}
+
+html {
+	background-color: rgb(250 250 250);
+	--white: rgb(250 250 250);
+	--black: rgb(0 0 0);
+	--accent1: rgb(0 0 200);
+	--daccent1: rgb(0 0 150);
+	--accent2: rgb(200 0 250);
+	--daccent2: rgb(150 0 200);
+	--accent3: rgb(0 250 100);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Work Sans Bold", sans-serif;
+}
+
+h6 {
+	font-size: 12.5px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--accent1);
+}
+
+div {
+	display: flex;
+	align-items: center;
+}
+
+header, footer {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--white);
+	background-color: var(--accent1);
+}
+
+input {
+	margin: 0px 5px;
+	padding: 10px;
+	border: solid 3px var(--white);
+	border-radius: 10px;
+	color: var(--white);
+	background-color: unset;
+}
+
+main {
+	padding: 20px;
+	display: flex;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+}
+
+nav a {
+	margin: 0px 5px;
+	text-decoration: none;
+	color: var(--white);
+}
+
+section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.button {
+	padding: 10px;
+	border: solid 3px var(--accent2);
+	color: var(--white);
+	background-color: var(--accent2);
+	border-radius: 10px;
+}
+
+.logo img {
+	margin-right: 10px;
+	height: 30px;
+}
+
+input:focus-visible {
+	outline: none;
+	color: var(--black);
+	background-color: var(--white);
+}
+
+input::placeholder {
+	color: var(--white);
+}
+
+input:focus-visible::placeholder {
+	color: var(--black);
+}
+
+a:hover {
+	color: var(--accent2);
+}
+
+.button:hover {
+	border: solid 3px var(--white);
+	color: var(--white);
+	background-color: var(--daccent2);
+}
+
+#topsection {
+	min-height: 90vh;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../content/historicfigures/venus_birth.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#topsection div {
+	padding: 20px;
+	width: 60%;
+	flex-direction: column;
+}
+
+#topsection h3 {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 70px;
+	color: var(--white);
+}
+
+@media screen and (max-width: 900px) {
+	header {
+		flex-direction: column;
+	}
+	
+	nav {
+		margin-top: 10px;
+		width: 100%;
+		justify-content: space-between;
+	}
+	
+	nav div {
+		margin: 0px -5px 0px -5px;
+	}
+	
+	.logo {
+		width: 100%;
+	}
+	
+	#topsection h3 {
+		margin-bottom: 10px;
+		text-align: center;
+		font-size: revert;
+		color: var(--white);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	a {
+		padding: 10px 0px;
+	}
+	
+	nav {
+		flex-direction: column-reverse;
+	}
+	
+	.logo {
+		width: unset;
+	}
+}
+
+@font-face {
+	font-family: "Work Sans";
+	font-weight: 400;
+	src: url("https://fonts.gstatic.com/s/worksans/v18/QGYsz_wNahGAdqQ43Rh_fKDp.woff2");
+}
+
+@font-face {
+	font-family: "Work Sans Bold";
+	font-weight: 600;
+	src: url("https://fonts.gstatic.com/s/worksans/v18/QGYsz_wNahGAdqQ43Rh_fKDp.woff2");
+}
