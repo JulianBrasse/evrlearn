@@ -178,6 +178,10 @@ input:focus-visible::placeholder {
 		width: 100%;
 	}
 	
+	.ups {
+		display: none;
+	}
+	
 	#topsection {
 		background-size: unset;
 	}
