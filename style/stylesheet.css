@@ -4,7 +4,7 @@
 	margin: 0px;
 	padding: 0px;
 	font-size: 15px; 
-	font-family: "Work Sans", sans-serif;
+	font-family: "Epilogue", sans-serif;
 }
 
 html {
@@ -20,7 +20,8 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Work Sans Bold", sans-serif;
+	font-family: "Epilogue", sans-serif;
+	font-width: bold;
 }
 
 h6 {
@@ -211,15 +212,4 @@ input:focus-visible::placeholder {
 		width: unset;
 	}
 }
-
-@font-face {
-	font-weight: 400;
-	font-family: "Work Sans";
-	src: url("https://fonts.gstatic.com/s/worksans/v18/QGYsz_wNahGAdqQ43Rh_fKDp.woff2");
-}
-
-@font-face {
-	font-weight: 600;
-	font-family: "Work Sans Bold";
-	src: url("https://fonts.gstatic.com/s/worksans/v18/QGYsz_wNahGAdqQ43Rh_fKDp.woff2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Newsreader:opsz,wght@6..72,400;6..72,700");
