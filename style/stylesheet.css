@@ -13,9 +13,10 @@ html {
 	--black: rgb(0 0 0);
 	--accent1: rgb(0 0 200);
 	--daccent1: rgb(0 0 150);
-	--accent2: rgb(175 0 150);
-	--daccent2: rgb(125 0 100);
+	--accent2: rgb(200 0 150);
+	--daccent2: rgb(150 0 100);
 	--accent3: rgb(250 200 0);
+	--daccent3: rgb(250 150 0);
 }
 
 h1, h2, h3, h4, h5, h6 {
