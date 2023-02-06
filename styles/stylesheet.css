@@ -1,0 +1,241 @@
+/*Position, Size, Order, Shape, Font, Color*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px; 
+	font-family: "Work Sans", sans-serif;
+}
+
+html {
+	background-color: rgb(250 250 250);
+	--white: rgb(250 250 250);
+	--black: rgb(0 0 0);
+	--grey1: rgb(200 200 200);
+	--accent1: rgb(0 0 200);
+	--daccent1: rgb(0 0 150);
+	--accent2: rgb(200 0 150);
+	--daccent2: rgb(150 0 100);
+	--accent3: rgb(250 200 0);
+	--daccent3: rgb(250 150 0);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	font-family: "Work Sans", sans-serif;
+}
+
+h5 {
+	font-size: 12.5px;
+}
+
+h4 {
+	font-size: 15px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+p {
+	margin-top: 10px;
+}
+
+header, footer {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	background-color: var(--white);
+	box-shadow: 0px 10px 10px -10px var(--black);
+}
+
+footer {
+	color: var(--black);
+	background-color: var(--grey1);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+article {
+	height: 75vh;
+	width: 100%;
+	display: flex;
+}
+
+aside {
+	width: 150%;
+}
+
+section {
+	width: 100%;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+a {
+	margin: 0px 20px;
+	display: flex;
+	text-decoration: none;
+	color: var(--accent1);
+}
+
+div {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+input {
+	padding: 10px;
+	width: 500px;
+	border: solid 3px var(--grey1);
+	border-radius: 10px;
+	color: var(--black);
+	background-color: unset;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.usp {
+	padding: 10px;
+	justify-content: space-evenly;
+	color: var(--white);
+	background-color: var(--daccent1);
+}
+
+.button {
+	margin: 0px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 3px var(--accent2);
+	border-radius: 10px;
+	color: var(--white);
+	background-color: var(--accent2);
+}
+
+.special {
+	margin: 0px 20px;
+	height: 70%;
+	width: 70%;
+	border: solid 3px var(--accent1);
+	color: var(--accent1);
+	background-color: unset;
+	transition: 1s;
+}
+
+.text {
+	flex-direction: column;
+}
+
+.logo {
+	margin-right: 20px;
+	width: unset;
+	justify-content: unset;
+}
+
+.logo img {
+	margin-right: 10px;
+	height: 30px;
+}
+
+.friends {
+	height: 75px;
+	overflow: auto;
+}
+
+.friends img {
+	margin-right: 20px;
+}
+
+a:hover {
+	color: var(--accent2);
+}
+
+input:focus-visible {
+	outline: none;
+	background-color: var(--grey1);
+}
+
+.button:hover {
+	color: var(--white);
+	background-color: var(--daccent2);
+	border: solid 3px var(--daccent2);
+}
+
+.special:hover {
+	height: 80%;
+	width: 80%;
+	box-shadow: 0px 0px 10px var(--black);
+	background-color: var(--accent1);
+	border: solid 3px var(--accent1);
+}
+
+input::placeholder {
+	color: var(--black);
+}
+
+.account::before {
+	margin-right: 10px;
+	height: 15px;
+	width: 15px;
+	content: url("../content/elements/account.svg");
+}
+
+.friends::-webkit-scrollbar {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	
+	nav {
+		width: 100%;
+	}
+	
+	section {
+		width: 100%;
+	}
+	
+	aside {
+		display: none;
+	}
+	
+	.usp, header nav {
+		display: none;
+	}
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans");
