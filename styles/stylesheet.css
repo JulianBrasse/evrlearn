@@ -205,6 +205,11 @@ input:focus-visible {
 	border: solid 3px var(--accent1);
 }
 
+::selection {
+	background-color: var(--accent3);
+	color: var(--black);
+}
+
 input::placeholder {
 	color: var(--black);
 }
